@@ -71,7 +71,7 @@ require('bugpack').context("*", function(bugpack) {
          *      reconnect: boolean,
          *      open: boolean
          * }} persistedCallData
-         * @returns {PersistedCall}
+         * @return {PersistedCall}
          */
         buildPersistedCall: function(persistedCallData) {
             return new PersistedCall(persistedCallData.callType, persistedCallData.callUuid, persistedCallData.reconnect, persistedCallData.open);
@@ -82,7 +82,7 @@ require('bugpack').context("*", function(bugpack) {
          * @param {string} callUuid
          * @param {boolean} reconnect
          * @param {boolean} open
-         * @returns {PersistedCall}
+         * @return {PersistedCall}
          */
         factoryPersistedCall: function(callType, callUuid, reconnect, open) {
             return new PersistedCall(callType, callUuid, reconnect, open);
@@ -90,7 +90,7 @@ require('bugpack').context("*", function(bugpack) {
 
         /**
          * @param {PersistedCall} persistedCall
-         * @returns {{
+         * @return {{
          *      callType: string,
          *      callUuid: string,
          *      open: boolean,

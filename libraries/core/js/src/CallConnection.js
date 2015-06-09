@@ -108,10 +108,15 @@ require('bugpack').context("*", function(bugpack) {
             this.socketConnection   = socketConnection;
         },
 
+
+        //-------------------------------------------------------------------------------
+        // Init Methods
+        //-------------------------------------------------------------------------------
+
         /**
-         * @private
+         *
          */
-        _initializer: function() {
+        init: function() {
             this._super();
             this.initialize();
         },

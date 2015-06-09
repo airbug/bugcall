@@ -92,7 +92,7 @@ require('bugpack').context("*", function(bugpack) {
 
         /**
          * @param {CallRequest} callRequest
-         * @returns {{
+         * @return {{
          *      data: string,
          *      type: *,
          *      uuid: string

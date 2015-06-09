@@ -118,7 +118,7 @@ require('bugpack').context("*", function(bugpack) {
         },
 
         /**
-         * @returns {PersistedCallFactory}
+         * @return {PersistedCallFactory}
          */
         getPersistedCallFactory: function() {
             return this.persistedCallFactory;
@@ -210,7 +210,7 @@ require('bugpack').context("*", function(bugpack) {
 
         /**
          * @param {string} callUuid
-         * @returns {string}
+         * @return {string}
          */
         generateCallKey: function(callUuid) {
             return "call:" + callUuid;
